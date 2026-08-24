@@ -111,5 +111,33 @@
     <h2>Download Links</h2>
     <p>Open a book with tag (<strong>a</strong>): <a href="books/Mybook.pdf" target="_blank" type="application/pdf">Open Book</a></p>
     <p>Install a book with tag (<strong>a</strong>): <a href="books/Mybook.pdf" download="Mybook.pdf">Install Book</a></p>
+
+    <h2>How use dynamic image</h2>
+    <p>We use the tag <strong>picture and source</strong> to make adapted image</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="img/P.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="img/M.png" type="image/png">
+        <img src="img/G.png" alt="Large image">
+    </picture>
+
+    <h2>Tp use audios</h2>
+    <p>We use audio with the tag <strong>audio and source</strong></p>
+
+    <audio controls>
+        <source src="audio/Kuntry-Boy.mp3" type="audio/mp3">
+        <source src="audio/Kuntry-Boy.ogg" type="audio/ogg">
+        <source src="audio/Kuntry-Boywave.wav" type="audio/wav">
+    </audio>
+
+    <pre>
+        <code>
+            &lt;audio controls&gt;
+                &lt;source src="audio/Kuntry-Boy.mp3" type="audio/mp3"&gt;
+                &lt;source src="audio/Kuntry-Boy.ogg" type="audio/ogg"&gt;
+                &lt;source src="audio/Kuntry-Boywave.wav" type="audio/wav"&gt;
+            &lt;/audio&gt;
+        </code>
+    </pre>
 </body>
 </html>
