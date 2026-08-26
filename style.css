@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: aqua;
+    background-image: linear-gradient(to top, #FA0080, #00DDFA, #FADD00, #A59837, #7A3D5D, #3D737A);
+    background-attachment: fixed;
+}
+
+div {
+    background-color: white;
+    border-radius: 10px;
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 5px 5px 10px yellow;
+}
+
+div p, h2 {
+    color: blue;
+}
