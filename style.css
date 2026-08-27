@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'cav';
+    src: url(font/La\ Cavale\ Solitaire.ttf) format('truetype');
+    font-size: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0%;
     padding: 0%;
@@ -8,12 +15,16 @@
 }
 
 body {
-    background-color: aqua;
-    background-image: linear-gradient(to top, #FA0080, #00DDFA, #FADD00, #A59837, #7A3D5D, #3D737A);
+    background-image: linear-gradient(to top, #001dfa, #0119d0, #000b62, #001299, #000a53, #000422);
     background-attachment: fixed;
+    color: white;
 }
 
-div {
+h1, h2 {
+    font-family: 'cav', sans-serif;
+}
+
+#caixagrande {
     background-color: white;
     border-radius: 10px;
     width: 600px;
@@ -22,6 +33,77 @@ div {
     box-shadow: 5px 5px 10px yellow;
 }
 
-div p, h2 {
+div h2 {
     color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div p {
+    color: blue;
+    font-family: monospace, serif;
+    font-size: 1em;  /*1em = 16px (geralmente)*/
+}
+
+.caixa {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.caixa:hover {
+    background-color: #000b62;
+    cursor: pointer;
+}
+
+.caixa:hover p {
+    color: blueviolet;
+    transform: translateY(180px);
+    transition: 1.0s;
+}
+
+#corrida {
+    background-color: white;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#corrida {
+    cursor: pointer;
+    background-image: url(img/street.jpg);
+}
+
+#corrida p {
+    transform: translateX(-0vw);
+    width: 10vw;
+}
+
+#corrida:hover p.bike {
+    transform: translateX(80vw);
+    transition: 50.0s;
+}
+
+#corrida:hover p.carro {
+    transform: translateX(80vw);
+    transition: 30.0s;
+}
+
+#corrida:hover p.moto {
+    transform: translateX(80vw);
+    transition: 25.0s;
+}
+
+#corrida:hover p.trem {
+    transform: translateX(80vw);
+    transition: 15.0s;
+}
+
+#corrida:hover p.aviao {
+    transform: translateX(80vw);
+    transition: 5.0s;
 }
