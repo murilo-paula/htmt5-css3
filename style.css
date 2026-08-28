@@ -9,15 +9,14 @@
 
 * {
     margin: 0%;
+    margin-bottom: 20px;
     padding: 0%;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 body {
-    background-image: linear-gradient(to top, #001dfa, #0119d0, #000b62, #001299, #000a53, #000422);
-    background-attachment: fixed;
-    color: white;
+    background-color: rgb(198, 198, 198);
+    color: black;
 }
 
 h1, h2 {
@@ -106,4 +105,19 @@ div p {
 #corrida:hover p.aviao {
     transform: translateX(80vw);
     transition: 5.0s;
+}
+
+a {
+    color: yellow;
+}
+#visited:visited {
+    color: red;
+}
+
+#hover:hover {
+    color: green;
+}
+
+#active:active {
+    color: pink;
 }
