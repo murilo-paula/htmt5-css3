@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: droid;
+    src: url(font/idroid.otf) format(opentype);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    color: black;
+}
+
+body {
+    background-color: rgb(132, 190, 44);
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    background-image: linear-gradient(rgb(2, 207, 2), green);
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+header h1, header p, nav {
+    margin-top: 20px;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    display: flex;
+    width: 70px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover{
+    background-color: rgb(0, 255, 0);
+}
+
+main {
+    margin: auto;
+    width: 70vw;
+    border: 2px solid black;
+    background-color: white;
+    padding: 15px;
+}
+
+
+h1, h2 {
+    font-family: droid;
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+div {
+    margin-top: 10px;
+}
+
+main h2 {
+    background-image: linear-gradient(to left, white, yellowgreen);
+}
+
+main picture img {
+    width: 70vw;
+}
+
+#bugdroid {
+    text-align: center;
+}
+
+.videos {
+    background-color: green;
+    text-align: center;
+    padding: 20px;
+    object-fit: cover;
+}
+
+main ul {
+    padding-left: 25px;
+    list-style-type: decimal;
+}
+
+#caixagrande {
+    background-color: rgb(19, 255, 58);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.twocollum {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caixa {
+    width: 35vw;
+}
