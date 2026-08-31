@@ -1,8 +1,18 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @font-face {
     font-family: droid;
     src: url(font/idroid.otf) format(opentype);
+}
+
+:root {
+    --bgcolor: rgb(132, 190, 44);
+    --cor-escura: green;
+    --cor-clara: rgb(2, 207, 2);
+
+    --font-droid: "Bebas Neue" ,sans-serif;
 }
 
 * {
@@ -12,15 +22,30 @@
 }
 
 body {
-    background-color: rgb(132, 190, 44);
+    background-color: var(--cor-clara);
     overflow-x: hidden;
+}
+
+p {
+    text-indent: 30px;
+    line-height: 1.3em;
+}
+
+main strong {
+    font-weight: bold;
+    background-color: var(--cor-clara);
+    padding: 0px 10px;
+}
+
+main strong::after {
+    content: "❤️";
 }
 
 header {
     display: flex;
     width: 100vw;
     height: auto;
-    background-image: linear-gradient(rgb(2, 207, 2), green);
+    background-image: linear-gradient(var(--cor-clara), var(--cor-escura));
     text-align: center;
     flex-direction: column;
     justify-content: space-evenly;
@@ -28,8 +53,17 @@ header {
 
 
 header h1, header p, nav {
+    font-family: var(--font-droid);
     margin-top: 20px;
     color: white;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.3em;
 }
 
 nav ul{
@@ -51,15 +85,19 @@ nav ul li a {
 }
 
 nav ul li:hover{
-    background-color: rgb(0, 255, 0);
+    transition: 0.6s;
+    background-color: var(--cor-clara);
+    cursor: pointer;
 }
 
 main {
     margin: auto;
     width: 70vw;
-    border: 2px solid black;
     background-color: white;
     padding: 15px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.349);
 }
 
 
@@ -76,11 +114,11 @@ div {
     margin-top: 10px;
 }
 
-main h2 {
-    background-image: linear-gradient(to left, white, yellowgreen);
+main article h2 {
+    background-image: linear-gradient(to left, white, var(--cor-clara));
 }
 
-main picture img {
+main article picture img {
     width: 70vw;
 }
 
@@ -89,28 +127,40 @@ main picture img {
 }
 
 .videos {
-    background-color: green;
+    background-color: var(--cor-escura);
     text-align: center;
-    padding: 20px;
-    object-fit: cover;
+    padding-bottom: 50%;
+    position: relative;
 }
 
-main ul {
-    padding-left: 25px;
-    list-style-type: decimal;
+.videos > iframe {
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 #caixagrande {
-    background-color: rgb(19, 255, 58);
+    background-color: var(--cor-clara);
     border-radius: 10px;
     padding: 10px;
-}
-
-.twocollum {
-    display: flex;
-    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .caixa {
-    width: 35vw;
+    width: 70vw;
+}
+
+.caixa > ul {
+    columns: 2;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 1px;
+    background-image: linear-gradient(to left, white, var(--cor-escura));
+    text-align: center;
 }
