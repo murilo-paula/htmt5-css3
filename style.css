@@ -23,6 +23,10 @@ h1, h2 {
     font-family: 'cav', sans-serif;
 }
 
+code {
+   display: block;
+}
+
 #caixagrande {
     background-color: white;
     border-radius: 10px;
