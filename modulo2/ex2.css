@@ -154,7 +154,7 @@ main article picture img {
 
 .caixa > ul {
     columns: 2;
-    list-style-type: decimal;
+    list-style-type: georgian;
     list-style-position: inside;
 }
 
