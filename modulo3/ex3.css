@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(240, 240, 240);
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -63,6 +67,12 @@ main > p {
 section {
     padding: 20px;
 }
+
+section > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
 div#imgTravel {
     background-image: url('img/viagem01.jpg');
     background-position: center center;
@@ -75,21 +85,69 @@ div#imgTravel {
 
 }
 
+#allTravelCards {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+
+}
+
 .travelCard {
     width: 300px;
-    height: 300px;
+    height: auto;
     background-color: white;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     margin-top: 20px;
+    border-radius: 10px;
+}
+
+.travelCard > .travelCardImg {
+    width: 100%;
+    height: 200px;
 }
 
 .travelCard > div > img {
     width: 100%;
-    height: 50%;
-    border-radius-top-left: 10px;
-    border-radius-top-right: 10px;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
+
+.travelCardContent > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 10px;
+}
+
+.travelCardContent > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: black;
+    margin-top: 10px;
+}
+
 
 .travelCard > .travelCardContent {
     padding: 10px;
 }
+
+.travelCard > hr {
+    border: 1px solid rgb(145, 145, 145);
+    margin: 10px 0;
+}
+
+.travelCard > div > button {
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
