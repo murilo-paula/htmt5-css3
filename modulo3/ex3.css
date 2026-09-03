@@ -9,7 +9,7 @@
 header {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     height: 50px;
     background-image: linear-gradient(to bottom, blue, rgb(32, 0, 194));
     padding: 0 20px;
@@ -47,6 +47,10 @@ header > nav > ul > li > a {
     text-decoration: none;
 }
 
+header > nav > ul > li > a:hover {
+    color: yellow;
+}
+
 main > h1 {
     text-align: center;
     font-size: 2.5rem;
@@ -56,6 +60,9 @@ main > p {
     text-align: center;
 }
 
+section {
+    padding: 20px;
+}
 div#imgTravel {
     background-image: url('img/viagem01.jpg');
     background-position: center center;
@@ -66,4 +73,23 @@ div#imgTravel {
     margin: auto;
 
 
+}
+
+.travelCard {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.travelCard > div > img {
+    width: 100%;
+    height: 50%;
+    border-radius-top-left: 10px;
+    border-radius-top-right: 10px;
+}
+
+.travelCard > .travelCardContent {
+    padding: 10px;
 }
