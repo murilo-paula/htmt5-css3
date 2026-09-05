@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: travelFont;
+    src: url(font/CaacupeOne-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +30,9 @@ header > h1 {
     font-size: 1.5rem;
     align-self: center;
     margin: 10px 0;
+    font-family: travelFont;
+    color: white;
+    font-size: 2.5rem;
 }
 
 header > nav {
@@ -61,10 +69,12 @@ header > nav > ul > li > a:hover {
 main > h1 {
     text-align: center;
     font-size: 2.5rem;
+    margin: 20px 0;
 }
 
 main > p {
     text-align: center;
+    margin: 20px 0;
 }
 
 section {
@@ -88,6 +98,11 @@ div#imgTravel {
 
 }
 
+div#imgTravel:hover {
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+}
+
 #allTravelCards {
     display: flex;
     width: 100%;
@@ -109,6 +124,7 @@ div#imgTravel {
 .travelCard > .travelCardImg {
     width: 100%;
     height: 200px;
+    overflow: hidden;
 }
 
 .travelCard > div > img {
@@ -116,6 +132,12 @@ div#imgTravel {
     height: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.travelCard > div > img:hover {
+    transform: scale(1.10);
 }
 
 .travelCardContent > h3 {
@@ -154,3 +176,30 @@ div#imgTravel {
     cursor: pointer;
 }
 
+#visualImagem {
+    width: 100%;
+    height: 70vh;
+    background-image: url('img/viagem03.jpg');
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#visualImagem > h2 {
+    font-family: travelFont;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+#visualImagem > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+    height: 10vh;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
