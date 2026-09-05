@@ -21,7 +21,7 @@ header {
     width: 100%;
     height: auto;
     background-image: linear-gradient(to bottom, blue, rgb(32, 0, 194));
-    padding: 0 20px;
+    padding: 0 10px;
     flex-wrap: wrap;
 }
 
@@ -38,7 +38,7 @@ header > h1 {
 header > nav {
     display: flex;
     gap: 20px;
-    margin: 10px 0;
+    margin: 10px 0px;
 }
 header > nav > input {
     width: 200px;
