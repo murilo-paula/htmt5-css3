@@ -9,18 +9,126 @@
 
 * {
     margin: 0%;
-    margin-bottom: 20px;
     padding: 0%;
-    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: rgb(198, 198, 198);
     color: black;
 }
 
-h1, h2 {
-    font-family: 'cav', sans-serif;
+a {
+    color: blue;
+}
+
+a:hover {
+    color: rgb(0, 0, 171);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;   
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    z-index: 9999;
+}
+
+header > div {
+    margin-left: 10px;
+    height: 10vh;   
+    align-items: center;
+    display: flex;
+}
+
+header > div > div > a > img {
+    width: 50px; 
+}
+
+header > div > div > h1 {
+    font-size: 0.6em;
+}
+
+header > nav {
+    margin-right: 10px;
+}
+
+main {
+    display: flex;
+    padding: 30px;
+}
+
+#pagesAside {
+    position: fixed;
+    top: 10vh;
+    width: 17%;
+    height: 100vh;
+    z-index: 9998;
+}
+
+#pagesAside > hr {
+    color: aliceblue;
+    margin: 10px 1px;
+}
+
+#pagesAside > h1 {
+    font-size: 1.5em;
+    font-style: none;
+    font-weight: 500;
+}
+
+#pagesAside > nav {
+    width: 100%;
+    height: auto;
+}
+
+#pagesAside > nav > a {
+    display: block;
+    margin-top: 10px;
+}
+
+#contentAside {
+    position: relative;
+    top: 10vh;
+    margin-left: 20%;
+    width: 80%;
+}
+
+#contentAside ul, ol {
+    list-style-position: inside;
+}
+
+#contentAside picture img {
+    width: 100%;
+}
+
+#contentAside h1, h2 {
+    margin-bottom: 20px;
+}
+
+#contentAside p {
+    text-indent: 30px;
+    margin-bottom: 10px;
+}
+
+
+.video {
+    position: relative;
+    width: 100%;
+    /* Mantém a proporção padrão de vídeo 16:9 */
+    aspect-ratio: 16 / 9; 
+    margin-bottom: 20px;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 code {
@@ -36,12 +144,12 @@ code {
     box-shadow: 5px 5px 10px yellow;
 }
 
-div h2 {
+#caixagrande > h2 {
     color: blue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-div p {
+#caixagrande > p {
     color: blue;
     font-family: monospace, serif;
     font-size: 1em;  /*1em = 16px (geralmente)*/
@@ -67,53 +175,6 @@ div p {
     transition: 1.0s;
 }
 
-#corrida {
-    background-color: white;
-    width: 90%;
-    height: auto;
-    margin: auto;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-#corrida {
-    cursor: pointer;
-    background-image: url(img/street.jpg);
-}
-
-#corrida p {
-    transform: translateX(-0vw);
-    width: 10vw;
-}
-
-#corrida:hover p.bike {
-    transform: translateX(80vw);
-    transition: 50.0s;
-}
-
-#corrida:hover p.carro {
-    transform: translateX(80vw);
-    transition: 30.0s;
-}
-
-#corrida:hover p.moto {
-    transform: translateX(80vw);
-    transition: 25.0s;
-}
-
-#corrida:hover p.trem {
-    transform: translateX(80vw);
-    transition: 15.0s;
-}
-
-#corrida:hover p.aviao {
-    transform: translateX(80vw);
-    transition: 5.0s;
-}
-
-a {
-    color: yellow;
-}
 #visited:visited {
     color: red;
 }
