@@ -47,8 +47,8 @@ header > div > div > a > img {
     width: 50px; 
 }
 
-header > div > div > h1 {
-    font-size: 0.6em;
+header > div > h1 {
+    font-size: 2em;
 }
 
 header > nav {
