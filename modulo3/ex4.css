@@ -9,6 +9,12 @@ table {
     border-collapse: collapse;
 }
 
+caption {
+    background-color: rgb(48, 2, 255);
+    padding: 10px;
+    color: white;
+}
+
 td, th {
     height: 50px;
     padding: 8px;
@@ -20,4 +26,4 @@ td, th {
 
 thead, tfoot {
     background-color: rgb(176, 176, 176);
-}
+} 
