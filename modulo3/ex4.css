@@ -24,6 +24,15 @@ td, th {
     vertical-align: center;
 }
 
+
+tbody > tr:nth-child(2n) {
+    background-color: gray;
+}
+
+tbody > tr:nth-child(2n-1) {
+    background-color: lightgray;
+}
+
 thead, tfoot {
-    background-color: rgb(176, 176, 176);
+    background-color: rgb(255, 0, 0);
 } 
