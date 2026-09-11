@@ -1,14 +1,23 @@
 @charset "UTF-8";
 
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 table {
-    width: 500px;
+    width: 400px;
     border-collapse: collapse;
 }
 
-td {
-    border: 1px solid black;
+td, th {
+    height: 50px;
     padding: 8px;
-    text-align: left;
+    border: 1px solid black;
+
+    text-align: center;
+    vertical-align: center;
+}
+
+thead, tfoot {
+    background-color: rgb(176, 176, 176);
 }
